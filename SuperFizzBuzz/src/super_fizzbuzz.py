@@ -1,5 +1,5 @@
 def super_fizzbuzz(number):
-    result = ""
+    result = []
     if number % 3 == 0 :
         result.append('Fizz')
         if number % 9 == 0:
@@ -14,5 +14,6 @@ def super_fizzbuzz(number):
             result.append('Buzz')
     else:
         result = ['NoFizzBuzz']
+    tmp = ''.join(map(str, result))
     
-    return str(result)
+    return (tmp)
